@@ -52,8 +52,8 @@ class Article {
       'Today we learned about CSS, or, Cascading StyleSheets - how cool! This language helps us make our sites look pretty, we get to define the styles.'
     ),
     new Article(
-        'Dive into SASS',
-        'This was awesome to learn about SASS, or, Syntactically Awesome Style Sheets'
+    'Dive into SASS',
+    'This was awesome to learn about SASS, or, Syntactically Awesome Style Sheets'
     ),
     new Article(
       'Another New Topic!? (JS)',
@@ -68,11 +68,24 @@ class Article {
       'Our very first large JavaScript framework, how exciting! Now we can build web components and build more complex front-ends with ease... a bit of a learning curve but so useful now that we\'re getting the hang of it!'
     )
   ];
+  const blogArticles = ( arr, length ) => {
+  article = newArticle;
+  length = newArticle.length;
+  let i = 0;
+  let arr = [];
+
+  while ( i <= length ) {
+    arr.push( arr * i ); // num * i is the value we're adding the array.
+    i = i + 1; // Iterating our iterator so the loop DOES END.
+}
+  return arr;
+} 
+  
   
   // TODO: Add a new article to the array (add "SASS" inbetween the "CSS" and "JS" articles.)
   
   for ( let article of blogArticles )
-  {
-    // TODO: Loop through articles and output each of them to the browser.
+for ( let i = 0; i < newArticle.length; i = i + 1 ) {
+     console.log( newArticle );
   }
-  
+  // TODO: Loop through articles and output each of them to the browser.
